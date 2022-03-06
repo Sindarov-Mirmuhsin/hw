@@ -38,16 +38,17 @@
             </div>
           </div>
           
-          <div class="row shadow rounded me-3 p-5 mt-5">
+          <div class="row shadow rounded p-5 mt-5 ms-1 me-3">
             
             <h3 class="mb-5">Billing addres</h3>
             
-            <div class="form-check border-bottom border-secondary pb-3 mb-3">
+            <div class="form-check border-secondary pb-1 mb-3">
               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
               <label class="form-check-label" for="flexRadioDefault2">
                 Same as the shipping addres
               </label>
             </div>
+            <hr>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
               <label class="form-check-label" for="flexRadioDefault2">
@@ -57,11 +58,11 @@
             
           </div>
           
-          <div class="row my-5">
-            <div class="col-6">
+          <div class="d-flex justify-content-between my-5">
+            <div class="">
               <p class="text-primary">Return to shipping method</p>
             </div>
-            <div class="col-6 ">
+            <div class="">
               <button type="submit" class="btn btn-primary ">Complete order</button>
             </div>
           </div>
@@ -72,18 +73,30 @@
       
       
       <div class="col-4 w-25 h-25 shadow rounded p-3">
-        <div class="row d-flex align-items-center border-bottom border-secondary mt-0 mb-4 p-2 mb-4">
-          <p class="col-6">Chocolate bar</p>
-          <p class="col-6 text-end">$2.49</p>
+        <div class="row d-flex align-items-center border-secondary mt-0 mb-0 p-2 mb-4">
+          <div class="col-2 p-1">
+            <button type="button" class="border rounded-2 p-2 position-relative">
+              <img src="./images/photo.jpeg" alt="photo badge">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">2</span>
+            </button>
+          </div>
+          <div class="col-6">
+            <p class="mb-0">Chocolate bar</p>
+          </div>
+          <div class="col-4">
+            <p class="mb-0 text-end">$2.49</p>
+          </div>
         </div>
+        <hr>
         <div class="row d-flex align-items-center mb-0 border-bottom-1">
           <p class="col-6 mb-0">Subtotal</p>
           <p class="col-6 text-end">$4.98</p>
         </div>
-        <div class="row d-flex align-items-center border-bottom border-secondary mt-0 mb-4 p-2">
+        <div class="row d-flex align-items-center border-secondary mt-0 mb-4 p-2">
           <p class="col-6 p-0">Shipping</p>
           <p class="col-6 p-0 text-end">$3.00</p>
         </div>
+        <hr>
         <div class="row d-flex align-items-center ">
           <p class="col-6">Total</p>
           <p class="col-6 text-end fw-bold">$7.98</p>
@@ -94,6 +107,6 @@
   </div>
   
   
-  <script src="./bootstrap/js/bootstrap.js"></script>
+  
 </body>
 </html>
